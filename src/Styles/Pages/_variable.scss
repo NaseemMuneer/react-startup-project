@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,500&display=swap');
+
+//colors
+$blackColor:#041424;
+$lightBlackColor:#747474;
+$whiteColor:#FFFFFF;
+$darkBlue:#1760A6;
+$yellowColor:#F8FF20;
+$lightBlueColor:#F8FBFF;
+$orangeColor:#FF9720;
+$none:transparent;
+
+
+//Fonts
+$titleFont:'Nunito, Helvetica, sans-serif';
+
+//@mixins Styles
+
+@mixin buttonStyle() {
+    width: 146px;
+    height: 42px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    opacity: 1;
+    font: normal normal bold 16px/22px Nunito;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+@mixin reqdemo() {
+    width: 209px;
+    height: 42px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+@mixin h1 {
+    text-align: left;
+    font: normal normal bold 40px/54px Nunito;
+    letter-spacing: 0.64px;
+    color: #FFFFFF;
+    opacity: 1;
+}

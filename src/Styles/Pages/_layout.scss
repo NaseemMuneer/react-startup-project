@@ -1,0 +1,129 @@
+@import './variable';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $titleFont;
+
+}
+
+.logo {
+    margin: 16px 0 14px 100px;
+    width: 168px;
+    height: 49px;
+}
+
+.nav-div {
+    background: $darkBlue;
+    height: 79px;
+    opacity: 1;
+
+    ul {
+        li {
+            list-style: none;
+            a {
+                font-size: 16px;
+                color: $whiteColor;
+                padding: 0px 27px 0 27px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.request-btn {
+
+    button {
+        @include buttonStyle();
+        margin: 16px 106px 21px 0;
+    }
+}
+
+
+
+
+// Footer 
+
+.footer-container {
+    padding-top: 160px;
+
+    .footer-div {
+        height: 295px;
+        width: 100%;
+        display: flex;
+        padding: 40px 106px 50px 100px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px -3px 6px #B1B1B129;
+        opacity: 1;
+        justify-content: space-between;
+
+        .logo-div {
+            width: 286px;
+            height: 237px;
+
+            img {
+                width: 180px;
+                height: 56px;
+            }
+        }
+
+        p {
+            text-align: left;
+            font: normal normal normal 16px/30px Nunito;
+            letter-spacing: 0.26px;
+            color: #1760A6;
+            opacity: 1;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: 0.5rem;
+
+                a {
+                    text-align: left;
+                    font: normal normal normal 16px/30px Nunito;
+                    letter-spacing: 0.26px;
+                    color: #1760A6;
+                    opacity: 1;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+h6 {
+    font-size: 16px;
+    text-align: left;
+    font: normal normal 800 16px 30px Nunito;
+    letter-spacing: 0.26px;
+    color: #1760A6;
+    opacity: 1;
+}
+
+.copy-right {
+    height: 59px;
+    background: #1760A6 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 0;
+
+    .footer-dev {
+        justify-content: space-between;
+        padding: 19px 108px 0px 504px;
+    }
+
+    p {
+        font: normal normal 600 16px/30px Nunito;
+        letter-spacing: 0.26px;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+      
+    }
+}

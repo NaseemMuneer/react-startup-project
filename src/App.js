@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home/Index';
+import About from './Pages/About/Index';
+import Feature from './Pages/Feature/Features';
+import PricingPlane from './Pages/PricingPlane/PricingPlane';
+import ContactUs from './Pages/ContactUs/ContactUs';
+import './App.scss';
 
-function App() {
+
+
+const App = ()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/" exact><Home/></Route>
+        <Route path="/aboutUs"><About/></Route>
+        <Route path="/features"><Feature/></Route>
+        <Route path="/pricing-plan"><PricingPlane/></Route>
+        <Route path="/contact-us"><ContactUs/></Route>
+      </Switch>
     </div>
   );
 }
