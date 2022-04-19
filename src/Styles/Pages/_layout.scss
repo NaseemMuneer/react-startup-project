@@ -8,6 +8,11 @@ body {
 
 }
 
+.navbar {
+    z-index: 999999;
+
+}
+
 .logo {
     margin: 16px 0 14px 100px;
     width: 168px;
@@ -22,6 +27,7 @@ body {
     ul {
         li {
             list-style: none;
+
             a {
                 font-size: 16px;
                 color: $whiteColor;
@@ -32,6 +38,10 @@ body {
     }
 }
 
+.ant-modal-content {
+    width: 139%;
+}
+
 .request-btn {
 
     button {
@@ -40,8 +50,9 @@ body {
     }
 }
 
-
-
+.ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none !important;
+}
 
 // Footer 
 
@@ -124,6 +135,12 @@ h6 {
         opacity: 1;
         padding: 0;
         margin: 0;
-      
+
     }
 }
+
+
+
+
+
+

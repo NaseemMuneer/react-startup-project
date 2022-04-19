@@ -1,0 +1,111 @@
+
+.pricing-card {
+  padding: 24px 30px 17px;
+  width: 268px;
+  height: 445px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 12px #8a8a8a29;
+  border-radius: 4px;
+  overflow: hidden;
+
+  p {
+    color: #041424;
+    font-size: 12px;
+  }
+
+  .feature-not-available {
+    color: #8f8f8f;
+    text-decoration: line-through;
+  }
+
+  .price-plan-header {
+    p:first-child {
+      color: #0286ff;
+      font-size: 24px;
+      font-weight: bold;
+
+      span {
+        color: #8a8a8a;
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+
+    p:last-child {
+      color: #8a8a8a;
+      font-size: 12px;
+    }
+
+    h6 {
+      font-weight: bold;
+      color: #041424;
+      font-size: 16px;
+    }
+  }
+
+  .strip {
+    background-color: black;
+    color: #ffffff;
+    transform: matrix(0.83, 0.56, -0.56, 0.83, 0, 0);
+    top: 23px;
+    right: -37px;
+    width: 60%;
+    margin-left: 100px;
+    font-size: 14px;
+  }
+
+  .price-img-container {
+    width: 84px;
+    height: 84px;
+    padding: 20px;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+  }
+
+  button {
+    color: #1760a6;
+    width: 202px;
+    height: 42px;
+    border: 1px solid #1760a6;
+    border-radius: 2px;
+  }
+
+  .btn-active {
+    background: #1760a6 0% 0% no-repeat padding-box;
+    color: #ffffff;
+  }
+
+  button:active {
+    background: #1760a6 0% 0% no-repeat padding-box;
+    color: #ffffff;
+  }
+
+  button:hover {
+    background: #1760a6 0% 0% no-repeat padding-box;
+    color: #ffffff;
+  }
+
+  ul {
+    margin-top: 24px;
+  }
+
+  li img {
+    margin-right: 6px;
+  }
+}
+
+.pricing-card-active {
+  width: 268px;
+  height: 494px;
+  padding-top: 52px;
+  padding-bottom: 30px;
+}
+
+.pricing-plan-top {
+  p {
+    text-align: left;
+    font: normal normal 12px;
+    letter-spacing: 0.19px;
+    color: #041424 !important;
+    opacity: 1;
+  }
+}

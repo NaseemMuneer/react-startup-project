@@ -2,8 +2,8 @@ import React from 'react'
 import Sketch from "../../../Assets/icons/sketch.png";
 import Store from "../../../Assets/icons/store.png";
 import Boxes from "../../../Assets/icons/boxes.png";
-import { ReactComponent as Path } from "../../../Assets/icons/Path.svg";
-import PrimaryCard from './../../Common/PrimaryCard/PrimaryCard';
+import Path from "../../../Assets/icons/Path 1001.png";
+import PrimaryCard from '../../Common/PrimaryCard/PrimaryCard';
 
 function Construction(props) {
 
@@ -30,7 +30,7 @@ function Construction(props) {
       title: "Construction Warehouses",
       body: "This covers Industries like ,retail stores and gives you ease to get all records This covers Industries like construction retail stores and gives you ease to get all records This covers Industries like ,retail stores and gives you ease to get all records",
       link: "/",
-      learn: 'learn more',
+      learn: "learn more",
       path: Path
     },
   ];
@@ -38,7 +38,7 @@ function Construction(props) {
 
   return (
     <section className="construction ">
-      <div className="card-content text-center">
+      <div className="card-content-1 text-center">
         <h1>We Provide Solutions For Different Business</h1>
         <p>
           This is the best digital tool for all your businesses which you
@@ -46,18 +46,19 @@ function Construction(props) {
           <br /> stores and gives you ease to get all the records in one place
           without worrying about.
         </p>
-        <div className="d-flex  primary-card justify-content-between m-auto">
+        <div className="d-flex justify-content-between primary-card-container-2">
           {cards.map((card) => (
             <PrimaryCard
               imgSource={card.imgSource}
               title={card.title}
               body={card.body}
-              link={card.link}
               learn={card.learn}
-              path={card.Path}
+              path={card.path}
 
-            />
+              
+              />
           ))}
+
         </div>
       </div>
     </section>

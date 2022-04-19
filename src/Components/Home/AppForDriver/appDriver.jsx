@@ -17,7 +17,7 @@ const AppForDriver = () => {
       </p>
 
       <div className="container d-flex justify-content-evenly content-container">
-        <img src={Mobile} alt="mobile" />
+        <img className="mob-img" src={Mobile} alt="mobile" />
 
         <div className="app-points">
           <h3>Our App Features</h3>
@@ -58,7 +58,7 @@ const AppForDriver = () => {
             </li>
           </ul>
           <div className="text-center">
-            <h6 className="fw-bold">Download Our App</h6>
+            <h6 className="fw-bold text-center">Download Our App</h6>
             <img src={GooglePlayIcon} alt="google-card" />
           </div>
         </div>

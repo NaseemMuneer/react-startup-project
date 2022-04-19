@@ -1,0 +1,230 @@
+$headingLight: #ffffff;
+$headingDark: #041424;
+$headingFont: 40px;
+
+$paraFontSize: 16px;
+$paraLight: #ffffff;
+$paraDark: #747474;
+
+$currentBreadCrumb: #d4d4d4;
+
+@mixin headingDark {
+  font-size: $headingFont;
+  color: $headingDark;
+}
+
+@mixin headingLight {
+  font-size: $headingFont;
+  color: $headingLight;
+}
+
+@mixin paraDark {
+  font-size: $paraFontSize;
+  color: $paraDark;
+}
+
+@mixin paraLight {
+  font-size: $paraFontSize;
+  color: $paraLight;
+}
+
+// -------------------  Contact us section ---------------------------
+.contact-us {
+  background: transparent url("../../Assets/hero-background.svg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  height: 433px;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  h1 {
+    font: normal normal bold 40px/54px Nunito;
+    letter-spacing: 0.64px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 40px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    @include paraLight;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+
+  hr {
+    background-color: $paraLight;
+    border: 1px solid #ffffff;
+    width: 179px;
+    opacity: 1;
+    margin-top: 6px;
+  }
+
+
+}
+
+.under-shade {
+  width: 179px;
+  height: 0px;
+  border-bottom: 2px solid #FFFFFF;
+  opacity: 1;
+}
+
+.contact-container {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 12px #8a8a8a29;
+  height: 778px;
+  margin-top: 50px;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 23px;
+
+  .contact-layout {
+    padding: 36px 24px 74px 0;
+    width: 60%;
+
+    h3 {
+      font-size: 24px;
+      color: #041424;
+      font-weight: bold;
+    }
+
+    label {
+      color: #041424;
+      font-size: 14px;
+    }
+
+    input {
+      background: #ffffff 0% 0% no-repeat padding-box !important;
+      border: 1px solid #d2d2d2 !important;
+      border-radius: 4px !important;
+      width: 100% !important;
+      height: 48px !important;
+      font-size: 16px !important;
+    }
+
+    .phone-number-div {
+      width: 57%;
+    }
+
+    .ant-form-vertical {
+      padding: 0px 0px 37px 23px;
+    }
+
+    .recaptch {
+      padding-top: 40px;
+    }
+
+    .reset-form-btn {
+      font: normal normal bold 16px/22px Nunito;
+      letter-spacing: 0.26px;
+      color: #FF1616;
+      opacity: 1;
+      background: transparent;
+      border: none;
+      width: 120px;
+      float: right;
+      margin-top: 55px;
+    }
+
+    .ant-form-vertical .ant-form-item {
+      padding: 0px;
+      margin: 0;
+    }
+  .footer-container{
+    margin-top: -600px !important;
+  }
+
+  
+
+
+
+    // ----------------  thanks message  -------------------------
+
+    .thanks-message {
+      padding: 90px 95px 0;
+
+      h1 {
+        color: #165fa5;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      p:nth-child(3) {
+        color: #041720;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 7px;
+      }
+
+      p:nth-child(4) {
+        color: #041720;
+        font-size: 20px;
+        margin-top: 38px;
+        margin-bottom: 13px;
+        // font-weight: bold;
+      }
+
+      p:nth-child(5) {
+        color: #041720;
+        font-size: 15px;
+        // font-weight: bold;
+      }
+    }
+  }
+
+  .information {
+    background: #f1f8ff 0% 0% no-repeat padding-box;
+    padding: 36px 116px 0 67px;
+    color: #165fa6;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 778px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #165fa6;
+    }
+
+    p {
+      font-size: 20px;
+      color: #165fa6;
+    }
+
+    // contact information icons
+    .ci-icon-location {
+      margin-top: 7px;
+      width: 19px;
+      height: 31px;
+    }
+
+    .ci-icon-phone {
+      margin-top: 7px;
+      width: 27px;
+      height: 30px;
+    }
+
+    .ci-icon-mail {
+      margin-top: 10px;
+      width: 25px;
+      height: 20px;
+    }
+  }
+}
+
+
+.ant-select-selector {
+  height: 48px !important;
+}
+
+#nest-messages_Message {
+  min-height: 98px;
+}
+
+.form-btn {
+  height: 48px !important;
+}
+.spacer-contact{
+  padding-bottom: 600px;
+}

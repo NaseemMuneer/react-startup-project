@@ -16,6 +16,27 @@ $titleFont:'Nunito, Helvetica, sans-serif';
 
 //@mixins Styles
 
+@mixin res-header($color) {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-nunito);
+    letter-spacing: var(--unnamed-character-spacing-0-32);
+    color: var(--unnamed-color-041424);
+    text-align: left;
+    font: normal normal bold 20px/27px Nunito;
+    letter-spacing: 0.32px;
+    opacity: 1;
+    color: $color;
+}
+
+@mixin res-para($color) {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-nunito);
+    letter-spacing: var(--unnamed-character-spacing-0-22);
+    color: var(--unnamed-color-747474);
+    text-align: left;
+    font: normal normal normal 14px/30px Nunito;
+    letter-spacing: 0.22px;
+    color: $color;
+}
+
 @mixin buttonStyle() {
     width: 146px;
     height: 42px;
@@ -38,10 +59,73 @@ $titleFont:'Nunito, Helvetica, sans-serif';
     opacity: 1;
 }
 
+
+@mixin header-left {
+    text-align: left;
+    font: normal normal bold 40px/54px Nunito;
+    letter-spacing: 0.64px;
+    color: #041424;
+    opacity: 1;
+}
+
 @mixin h1 {
     text-align: left;
     font: normal normal bold 40px/54px Nunito;
     letter-spacing: 0.64px;
     color: #FFFFFF;
+    opacity: 1;
+}
+
+//Model mixin start here
+@mixin model-header {
+    font: normal normal bold 24px/32px Nunito;
+    letter-spacing: 0px;
+    color: #041720;
+    opacity: 1;
+}
+
+@mixin model-para {
+    font: normal normal normal 16px/22px Nunito;
+    letter-spacing: 0px;
+    color: #041720;
+    opacity: 1;
+}
+
+@mixin model-label {
+    font: normal normal normal 14px/19px Nunito;
+    letter-spacing: 0.22px;
+    color: #041424;
+    opacity: 1;
+}
+
+@mixin model-submit-btn {
+    background: #1760A6 0% 0% no-repeat padding-box !important;
+    border-radius: 2px;
+    height: 48px;
+    opacity: 1;
+}
+
+//-----------------------------------------
+
+
+@mixin heading {
+    font: normal normal bold 40px/54px Nunito;
+    letter-spacing: 0.64px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@mixin para {
+    font: normal normal normal 20px/30px Nunito;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@mixin para-cards {
+    text-align: left;
+    font: normal normal normal 15px/30px Nunito;
+    letter-spacing: 0.26px;
+    color: #747474;
     opacity: 1;
 }

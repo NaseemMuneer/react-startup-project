@@ -18,7 +18,7 @@ function DAnalytics() {
       {
           key: 2,
           tabTitle: "BI Dashboard",
-          body: Dashboard,
+          body: "",
         },
         {
           key: 3,
@@ -37,7 +37,7 @@ function DAnalytics() {
 
           <Tabs defaultActiveKey="1" type="card">
             {tabData.map((tab)=>
-                <TabPane  tab={tab.tabTitle} key={tab.key}>
+                <TabPane className='tab-btn'  tab={tab.tabTitle} key={tab.key}>
               <div className="tab-body m-0">
                 <img src={tab.body} className="tab-img" alt="" />
               </div>

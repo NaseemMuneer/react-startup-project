@@ -1,0 +1,36 @@
+@import './Pages//variable';
+
+.model-container-div {
+
+    h2 {
+        @include model-header;
+    }
+
+    p {
+        @include model-para;
+    }
+
+    .ant-form-item-label {
+
+        label {
+            @include model-label;
+        }
+    }
+
+    .recaptch {
+        padding-bottom: 40px;
+    }
+
+    .form-btn-submit {
+        @include model-submit-btn;
+    }
+
+    .reset-form-btn {
+        height: 0px;
+        margin-top: 55px;
+        font: normal normal bold 16px/22px Nunito;
+        letter-spacing: 0.26px;
+        color: #FF1616;
+        opacity: 1;
+    }
+}

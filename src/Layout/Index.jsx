@@ -1,5 +1,7 @@
-import React, { Children } from 'react'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Modal, Drawer, Button } from 'antd';
+import RequestDemo from '../Components/Models/RequestDemo'
 import { ReactComponent as Logo } from '../Assets/icons/logo.svg';
 import logo from '../Assets/icons/logo.png';
 import { ReactComponent as Facebook } from '../Assets/icons/facebook.svg';
@@ -7,23 +9,86 @@ import { ReactComponent as Twitter } from '../Assets/icons/twitter.svg';
 import { ReactComponent as Linkesdin } from '../Assets/icons/linkedin.svg';
 import { ReactComponent as Instagram } from '../Assets/icons/instagram.svg';
 import { ReactComponent as Youtube } from '../Assets/icons/youtube.svg';
+import CloseIcon from '../Assets/icons/close-icon.png';
+import clsx from 'clsx';
+import Media from 'react-media';
+import headerIcon from '../Assets/icons/header-icon.png';
 
-function Index({children , title, page}) {
+
+
+function Index({ children, title, page }) {
 
     const navLinks = [
         { title: "Home", to: "/" },
-        { title: "AboutUs", to: "/aboutUs" },
+        { title: "Aboutus", to: "/aboutUs" },
         { title: "Features", to: "/features" },
-        { title: "Pricing-plan", to: "/pricing-plan" },
-        { title: "Contact us", to: "/contact-us" },
+        { title: "Pricing plan", to: "/pricing-plan" },
+        { title: "Contact Us", to: "/contact-us" },
     ];
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
+    const CloseModel = (
+        <img src={CloseIcon} alt="ima" />
+    )
+    const [visible, setVisible] = useState(false);
+
+    const showDrawer = () => {
+        setVisible(true);
+    };
+
+    const onClose = () => {
+        setVisible(false);
+    };
 
     return (
         <>
-            <div className='row w-100 navbar m-0 p-0 position-fixed'>
+            {/* row w-100 navbar m-0 p-0 position-fixed */}
+            <div className={clsx("row w-100 navbar m-0 p-0", page === 0 && "position-fixed")}>
                 <nav className='container-fluid nav-div d-flex align-items-center justify-content-between'>
-                    <div className='logo'>
+                    <div className='logo d-flex align-item-center'>
                         <Logo />
+                        <Media queries={{ small: { maxWidth: 599 } }}>
+                            {(matches) =>
+                                matches.small ? (
+                                    <>
+                                        <span className='header-icon '><img onClick={showDrawer} src={headerIcon} alt="" /></span>
+
+                                        <Drawer placement="right" closeIcon  visible={visible}>
+                                            <img className='text-white bg-white'onClick={onClose}  src={CloseIcon} alt="" />
+
+                                            <div>
+                                                <ul className=' d-flex flex-column '>
+                                                    {navLinks.map((item, index) => {
+                                                        return (
+                                                            <li key={item.title}>
+                                                                <Link to={item.to}>
+                                                                    {item.title}
+                                                                </Link>
+                                                            </li>
+                                                        )
+                                                    })}
+                                                </ul>
+                                            </div>
+                                        </Drawer>
+                                    </>
+                                ) : (
+                                    <p>The document is at least 600px wide.</p>
+                                )
+                            }
+                        </Media>
                     </div>
                     <div>
                         <ul className='ul-links d-flex'>
@@ -39,9 +104,13 @@ function Index({children , title, page}) {
                         </ul>
                     </div>
                     <div className='request-btn'>
-                        <button>Request Demo</button>
+                        <button onClick={showModal}>Request Demo</button>
                     </div>
+                    <Modal className='d-flex m-auto pt-5' closeIcon={CloseModel} width={582} footer={null} header={null} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                        <RequestDemo />
+                    </Modal>
                 </nav>
+
             </div>
 
 

@@ -58,7 +58,7 @@ function EveryThing(props) {
                 <p>
                     Prism comes with Different ready to use features to help you run your business.
                 </p>
-                <div className="d-flex  justify-content-between">
+                <div className="d-flex  justify-content-between almost-div">
                     {cards.map((card) => (
                         <SecondaryCard
                         imgSource={card.imgSource}
@@ -69,14 +69,12 @@ function EveryThing(props) {
                 </div>
             </div>
             <div className="">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between almost-div">
                     {cards2.map((card) => (
                         <SecondaryCard
                             imgSource={card.imgSource}
                             title={card.title}
                             link={card.link}
-                           
-
                         />
                     ))}
                 </div>

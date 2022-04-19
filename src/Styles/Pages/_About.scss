@@ -1,0 +1,166 @@
+@import './_variable.scss';
+
+
+// Avout page hero section style start here 
+.link-div{
+ float: left;
+}
+.about-us-container {
+    .pagination-div {
+        padding: 52px 0 0 100px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 433px !important;
+
+        .about-us-div {
+            padding: 40px 57px 48px 16px;
+
+            h1 {
+                @include heading;
+            }
+
+            p {
+                @include para;
+            }
+        }
+    }
+
+    .under-shade {
+        width: 179px;
+        height: 0px;
+        border-bottom: 2px solid #FFFFFF;
+        opacity: 1;
+    }
+}
+
+
+// Our vision style start here 
+
+.vision-container {
+
+    .vision-div {
+        padding: 80px 106px 0 100px;
+
+        .cards-container {
+            padding-top: 64px;
+        }
+
+        h1 {
+            @include heading;
+            color: #041424;
+        }
+
+        p {
+            @include para-cards;
+
+        }
+    }
+
+    .img-container {
+
+        p {
+            @include para-cards;
+        }
+    }
+
+    .primary-card {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 20px #98989829;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    .cardPrimary {
+        background-color: #fff;
+        width: 376px;
+        padding: 15px;
+        margin: 15px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 20px #98989829;
+        border-radius: 4px;
+        opacity: 1;
+    }
+}
+
+
+// Our Mission style start here 
+
+.mission-container {
+    padding-top: 160px;
+
+    .mission-dev {
+        padding: 0 106px 0 100px;
+
+        .heading {
+
+            h1 {
+                @include heading;
+                color: #041424;
+            }
+
+            P {
+                text-align: left;
+                font: normal normal normal 16px/30px Nunito;
+                letter-spacing: 0.26px;
+                color: #747474;
+                opacity: 1;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    opacity: 1;
+                }
+
+                p {
+                    text-align: left;
+                    font: normal normal 600 24px/40px Nunito;
+                    letter-spacing: 0.38px;
+                    color: #041424;
+                    opacity: 1;
+                    padding-left: 20px;
+
+                }
+            }
+        }
+    }
+}
+
+// About Hysabat style start here 
+.hysabat-container {
+    padding-top: 160px;
+
+    .hysabat-div {
+        height: 769px;
+        padding: 40px 528px 62px 100px;
+
+        h1 {
+            @include heading;
+        }
+
+        p {
+            @include para-cards;
+            text-align: left;
+            font: normal normal normal 16px/50px Nunito;
+            letter-spacing: 0.26px;
+            color: #FFFFFF;
+            opacity: 1;
+
+        }
+
+        .btn-req {
+            @include reqdemo;
+        }
+
+    }
+}

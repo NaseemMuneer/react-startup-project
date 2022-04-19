@@ -1,217 +1,286 @@
 // Analytics code start here 
 @import './variable';
 
-.d-analytics-container {
-    padding-top: 160px;
-    
- 
-     .d-analytics-dev {
-         background: transparent url("../../Assets/hero.png") 0% 0% no-repeat padding-box;
-         background-size: cover;
-         padding: 0px 100px;
-         font-size: 16px;
-         height: 769px;
-     }
-     h1 {
-         color: #ffffff;
-         font-size: 40px;
-         font-weight: bold;
-         margin-bottom: 8px;
-       }
-       p {
-         color: #ffffff;
-       }
-     
-       .tabs {
-         margin-top: 30px;
-       }
-       .tab-body {
-         width: 80%;
-         margin-top: 37px;
-         height: 605px;
-       }
-       .tab-img {
-         width: 100%;
-       }
-     
-       .ant-tabs-card {
-         margin-top: 30px;
-         .ant-tabs-nav {
-           .ant-tabs-tab {
-             margin-right: 34px;
-             padding: 0;
-             border: none;
-             border-radius: 4px;
-             background-color: transparent;
-           }
-         }
-       }
-       .ant-tabs-tab-btn {
-         height: 42px;
-         border-radius: 4px;
-         padding: 10px 9px 9px 9px;
-         color: #c9c9c9;
-         font-size: 16px;
-       }
-       .ant-tabs-tab-active {
-         background: #ffffff 0% 0% no-repeat padding-box;
-         border-radius: 4px;
-         color: #1760a6;
-         background: #ffffff !important;
-       }
-       .ant-tabs-nav::before {
-         border-bottom: none;
-       }
-       .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-         color: #1760a6;
-         text-shadow: 0 0 0.25px currentColor;
-       }
-       .ant-tabs-nav-wrap{
-           display: flex;
-           .ant-tabs-nav-list{
-               display: flex;
-           }
-       }
-     }
-  
-     
+.hero-btn{
+  padding: 0 250px;
+}
+.ant-tabs-top>.ant-tabs-nav::before {
+  border-bottom: none !important;
+}
 
-    //  App for Drivers start here 
+.card-content-1 {
+  padding: 100px 106px 0px 100px;
 
-    .appDriver-container {
-        padding: 154px 100px 0px 100px;
-        z-index: -1;
-        h1 {
-          font-size: 40px;
-          color: #041424;
-          font-weight: bold;
-        }
-        
-        p {
-          font-size: 16px;
-          color: #041424;
-          margin-top: 8px;
-        }
-        .content-container {
-          margin-top: 68px;
-        }
-        .StarIcon {
-          width: 20%;
-          height: 20%;
-          align-self: center;
-        }
-        .app-points {
-          h3 {
-            color: #041424;
-            font-weight: bold;
-            margin-left: 65px;
-          }
-          ul{
-            position: relative;
-            li {
-              display: flex;
-              align-items: center;
-              img {
-                z-index: 1;
-              }
-              hr {
-                width: 67px;
-                height: 0;
-                border: 0;
-                border-bottom: 2px dotted #efefef;
-              }
-              p {
-                font-size: 24px;
-                color: #041424;
-              }
-            }
-          }
-      
-          .horizontal-divider {
-            position: absolute;
-            left: 22px;
-            top: 0;
-            height: 381px;
-            width: 7px;
-            background: #e8e8e8;
-          }
-      
-          .horizontal-divider:before {
-            content: "";
-            position: absolute;
-            width: 13px;
-            height: 12px;
-            border-radius: 50%;
-            background: #e8e8e8;
-            top: -1px;
-            left:-3px;
-          }
-      
-          .horizontal-divider:after {
-            content: "";
-            position: absolute;
-            width: 13px;
-            height: 12px;
-            border-radius: 50%;
-            background: #e8e8e8;
-            bottom: -1px;
-            left:-3px;
-          }
-          
-        }
-      }
-      
-      
-// Clients section code start here  
-.clients {
-    background-color: #f8fbff;
-    height: 167px;
+  h1 {
+    @include header-left;
+  }
+
+  p {
+    text-align: left;
+    font: normal normal normal 16px/30px Nunito;
+    letter-spacing: 0.26px;
+    color: #747474;
+    opacity: 1;
+  }
+
+  .primary-card-container-2 {
+    padding-top: 68px;
+  }
+}
+
+.video-holder-1 {
+  background: transparent url("../../Assets/video-holder.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  width: 100%;
+  padding-top: 74px;
+  margin-left: -11px;
+  img{
     width: 100%;
-    margin-top: 220px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-  
-    .clients-logo:not(:nth-last-child(2)) {
-      width: 100px;
-      height: 35px;
-    }
-    .clients-logo:not(:last-child) {
-      margin-right: 135px;
-    }
   }
   
-  
+}
+
+.video-holder {
+  background: #fff;
+  width: 100%;
+  padding: 48px 501px 0 287px;
+  height: 501px;
+  opacity: 1;
+}
+
+.d-analytics-container {
+  padding-top: 160px;
+
+  .d-analytics-dev {
+    background: transparent url("../../Assets/hero-background.svg") 0% 0% no-repeat padding-box;
+    background-size: cover;
+    padding: 0px 100px;
+    font-size: 16px;
+    height: 769px;
+
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  .tabs {
+    margin-top: 30px;
+  }
+
+  .tab-body {
+    width: 80%;
+    margin-top: 37px;
+    height: 605px;
+  }
+
+  .tab-img {
+    width: 100%;
+  }
+
+  .ant-tabs-card {
+    margin-top: 30px;
+
+    .ant-tabs-nav {
+      .ant-tabs-tab {
+        margin-right: 34px;
+        padding: 0;
+        border: none;
+        border-radius: 4px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .ant-tabs-tab-btn {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 10px 9px 9px 9px;
+  }
+
+  .ant-tabs-tab-active {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    color: #1760a6;
+    background: #ffffff !important;
+  }
+
+  .ant-tabs-nav::before {
+    border-bottom: none;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #1760a6;
+    text-shadow: 0 0 0.25px currentColor;
+  }
+
+  .ant-tabs-nav-wrap {
+    display: flex;
+
+    .ant-tabs-nav-list {
+      display: flex;
+    }
+  }
+}
+
+
+
+//  App for Drivers start here 
+
+.appDriver-container {
+
+  padding: 154px 100px 0px 100px;
+  z-index: -1;
+
+  h1 {
+    font-size: 40px;
+    color: #041424;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    color: #041424;
+    margin-top: 8px;
+  }
+
+  .content-container {
+    margin-top: 68px;
+  }
+
+  .StarIcon {
+    width: 20%;
+    height: 20%;
+    align-self: center;
+  }
+
+  .app-points {
+    h3 {
+      color: #041424;
+      font-weight: bold;
+      margin-left: 65px;
+    }
+
+    ul {
+      position: relative;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        img {
+          z-index: 1;
+        }
+
+        hr {
+          width: 67px;
+          height: 0;
+          border: 0;
+          border-bottom: 2px dotted #efefef;
+        }
+
+        p {
+          font-size: 24px;
+          color: #041424;
+        }
+      }
+    }
+
+    .horizontal-divider {
+      position: absolute;
+      left: 22px;
+      top: 0;
+      height: 381px;
+      width: 7px;
+      background: #e8e8e8;
+    }
+
+    .horizontal-divider:before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e8e8e8;
+      top: -1px;
+      left: -3px;
+    }
+
+    .horizontal-divider:after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e8e8e8;
+      bottom: -1px;
+      left: -3px;
+    }
+
+  }
+}
+
+
+// Clients section code start here  
+.clients {
+  background-color: #f8fbff;
+  height: 167px;
+  width: 100%;
+  margin-top: 220px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  .clients-logo:not(:nth-last-child(2)) {
+    width: 100px;
+    height: 35px;
+  }
+
+  .clients-logo:not(:last-child) {
+    margin-right: 135px;
+  }
+}
+
+
 //   Free demo section code start here 
 
 .free-demo-container {
-    padding-top: 59px;
-    .hero-div {
-        height: 268px !important;
+  padding-top: 59px;
 
-        h1 {
-            font: normal normal bold 40px/54px Nunito;
-            letter-spacing: 0.64px;
-            color: #FFFFFF;
-            opacity: 1;
-        }
+  .hero-div {
+    height: 268px !important;
 
-        p {
-            text-align: center;
-            font: normal normal normal 16px/30px Nunito;
-            letter-spacing: 0.26px;
-            color: #FFFFFF;
-            opacity: 1;
-        }
-
-        button {
-            @include reqdemo();
-            font: normal normal bold 16px/22px Nunito;
-            letter-spacing: 0px;
-            color: #1760A6;
-            opacity: 1;
-        }
+    h1 {
+      font: normal normal bold 40px/54px Nunito;
+      letter-spacing: 0.64px;
+      color: #FFFFFF;
+      opacity: 1;
     }
+
+    p {
+      text-align: center;
+      font: normal normal normal 16px/30px Nunito;
+      letter-spacing: 0.26px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    button {
+      @include reqdemo();
+      font: normal normal bold 16px/22px Nunito;
+      letter-spacing: 0px;
+      color: #1760A6;
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -219,79 +288,73 @@
 
 // Hero section digital solution style start  here.
 .hero {
-    background: transparent url("../../Assets/hero.png");
-    background-size: cover;
-    height: 769px;
+  background: transparent url("../../Assets/hero-background.svg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  height: 769px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 59px;
+
+  .hero-content {
+    justify-content: center;
+    margin: auto;
     width: 100%;
-    background-size: cover;
-    padding-top: 59px;
+    color: $whiteColor;
+    padding: 138px 275px 0 275px;
 
-    .hero-content {
-        justify-content: center;
-        margin: auto;
-        width: 60%;
-        color: $whiteColor;
-        padding-top: 138px;
+    .hiw-btn {
+      @include buttonStyle();
 
-        .hiw-btn {
-            @include buttonStyle();
-
-            img {
-                width: 21px;
-                height: 21px;
-            }
-        }
-
-        .reqdemo {
-            @include reqdemo();
-            font: normal normal bold 16px/22px Nunito;
-            letter-spacing: 0px;
-            color: #1760A6;
-            opacity: 1;
-        }
-
-        h4 {
-            font-size: 20px;
-            color: $yellowColor;
-        }
-
-        h1 {
-           @include h1();
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        .video-holder {
-            padding: 48px 501px 0 287px;
-            width: 100;
-            height: 501px;
-            opacity: 1;
-            background: $whiteColor;
-        }
-
-        .chat-btn {
-            position: fixed;
-            top: 630px;
-            left: 1404px;
-            width: 56px;
-            height: 56px;
-            box-shadow: 0px 10px 20px #85858529;
-            background-color: #FFFFFF;
-            box-shadow: 0px 10px 20px #85858529;
-            opacity: 1;
-            border-radius: 50%;
-
-            img {
-                position: relative;
-                top: 10px;
-                width: 34px;
-                height: 32px;
-                opacity: 1;
-            }
-        }
-
+      img {
+        width: 21px;
+        height: 21px;
+      }
     }
+
+    .reqdemo {
+      @include reqdemo();
+      font: normal normal bold 16px/22px Nunito;
+      letter-spacing: 0px;
+      color: #1760A6;
+      opacity: 1;
+    }
+
+    h4 {
+      font-size: 20px;
+      color: $yellowColor;
+    }
+
+    h1 {
+      @include h1();
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+
+
+    .chat-btn {
+      position: fixed;
+      top: 630px;
+      left: 1404px;
+      width: 56px;
+      height: 56px;
+      box-shadow: 0px 10px 20px #85858529;
+      background-color: #FFFFFF;
+      box-shadow: 0px 10px 20px #85858529;
+      opacity: 1;
+      border-radius: 50%;
+
+      img {
+        position: relative;
+        top: 10px;
+        width: 34px;
+        height: 32px;
+        opacity: 1;
+      }
+    }
+
+  }
 
 }
